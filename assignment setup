@@ -1,14 +1,15 @@
+#basic skeleton for class assignment
+
 import hikari
 import lightbulb
 
-##########################################
-#basic skeleton for class assignment
-#need to figure out a way to "add types" for 'duedate' and 'class' for error-checking
+
 @bot.command
-@lightbulb.option('duedate', 'Date assignment is due')
+@lightbulb.option('duedate', 'Date assignment is due', type=datetime.datetime)
 @lightbulb.option('assignment', 'Assignment to be notified of')
-@lightbulb.option('class', 'Class of assignment to be notified from')
+@lightbulb.option('section', 'Class of assignment to be notified from', type=hikari.Role)
 @lightbulb.command('addassn', 'Adds assignment to be notified of')
 @lightbulb.implements(lightbulb.SlashCommand)
 async def addassn(ctx):
-    await ctx.respond('successful')
+    await ctx.respond(f'Noted, {ctx.options.assignment} is due on {ctx.options.duedate} for {ctx.options.section}')
+#bot.run()
