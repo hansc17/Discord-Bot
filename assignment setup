@@ -2,6 +2,9 @@ import hikari
 import lightbulb
 import sqlite3
 
+conn = sqlite3.connect('main.db')
+cursor = conn.cursor()
+
 @bot.command
 @lightbulb.option('duedate', 'Due date of assignment. Format: MM-DD-YYYY (example: 03-01-2022)')
 @lightbulb.option('assignment', 'Assignment name')
