@@ -1,4 +1,4 @@
-#testing
+#imports
 import hikari
 import lightbulb
 from lock import *
