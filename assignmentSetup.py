@@ -19,8 +19,7 @@ cursor = conn.cursor()
 conn.autocommit = True
 
 bot = lightbulb.BotApp(
-    token=TOKEN, 
-    #default_enabled_guilds=(guildID)
+    token=TOKEN
 )
 
 @bot.listen(hikari.StartedEvent)
