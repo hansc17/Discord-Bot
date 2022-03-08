@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>		
+		<title>Discord Notification Bot</title>
+
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+	</head>
+
+	<body>
+		<!-- Navbar Large Screen (sit on top) -->
+		<div class="w3-top w3-center">
+			<div class="w3-bar" id="myNavbar">
+	  			<a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+					<i class="fa fa-bars"></i>
+	  			</a>
+	  			<a href="#home" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-home"></i> HOME</a>
+	  			<a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+				<a href="#team" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-users"></i> TEAM</a>
+	  			<a href="#commands" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-users"></i> COMMANDS</a>
+	  			<a href="#events" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> FAQ</a>
+	  			<a href="#resources" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-book"></i> RESOURCES</a>
+	  			<!-- <a href="#sponsors" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-book"></i> SPONSORS</a> -->
+	  			<!-- <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a> -->
+				<a href="./login.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> LOGIN</a>
+			</div>
+  
+			<!-- Navbar for smaller screens -->
+			<div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+	 			<a href="#home" class="w3-bar-item w3-button"><i class="fa fa-home"></i> HOME</a>
+	  			<a href="#about" class="w3-bar-item w3-button "><i class="fa fa-user"></i> ABOUT</a>
+	  			<a href="#teams" class="w3-bar-item w3-button "><i class="fa fa-users"></i> TEAMS</a>
+	  			<a href="#commands" class="w3-bar-item w3-button"><i class="fa fa-users"></i> COMMANDS</a>
+	  			<a href="#resources" class="w3-bar-item w3-button"><i class="fa fa-book"></i> RESOURCES</a>
+	  			<a href="#sponsors" class="w3-bar-item w3-button"><i class="fa fa-book"></i> SPONSORS</a>
+	  			<a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+			</div>
+  		</div>
+
+
+  		<!-- First Parallax Image with Logo Text -->
+  		<div class="bgimg-1 w3-display-cover w3-opacity-min" id="home">
+		<div class="w3-display-middle" style="white-space:nowrap;">
+	  		<span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">
+				Kasugai Bot</span>
+			<h2>Welcome to your Number 1 Homework and Exam Helper</h2>
+		</div>
+		<div class="w3-display-bottommiddle">
+	  		<a href="#about" onclick="toggleFunction()"> <button class="buttonround w3-hover-dark-grey"><b>↓</b></button></a>
+		</div>
+  	</div>
+  
+  
+  <!-- Container (About Section) -->
+  <div class="w3-content w3-container w3-padding-64" id="about">
+	<h2 class="w3-center">ABOUT US</h2>
+	<p class="w3-center"><em> o </em></p>
+	<p>The Kasugai Bot</p>
+	<div class="w3-row">
+	  <div class="w3-col m6 w3-center w3-padding-large">
+		<img src="photos/" class="w3-round w3-image" width="700" height="333">
+	  </div>
+  
+	  <!-- Hide this text on small devices -->
+	  <div class="w3-col m6 w3-hide-medium w3-padding-large"></div>
+	  <div>
+		<p><b><i class="fa fa-users w3-margin-right"></i>A Message From Your Creators</b><br><br> 
+		    </p>
+	  </div>
+	</div>
+	<h3 class="w3-center"><b>COMP</b></h3>
+	<p class="w3-center">B
+	</p>
+	<h5 class="w3-center">We can proudly say that <a href="https://" target="_blank"><b><u>any CSUN student </u></b></a> o <i>V</i></h5>
+	<p class="w3-center">
+	  Along 
+	</p>
+  
+	<!-- Officers-->
+	<!-- Large Screens -->
+	<div class="w3-container-fluid w3-padding-16 w3-center" id="team">
+	  <div class="w3-panel w3-border">
+		<h2 style="font-size: 35px;">CREATORS</h2>
+		<!--Make sure the photos are 828 x 822 or warping will happen-->
+		<br style="line-height:0px;">
+		
+		<div class="row">
+		  <div class="w3-col l0 m4 s8">
+			<img src="photos/" alt="Role" style="width:175px; height:175px" class="w3-circle">
+			<h3>Member#1<br> <em><b>Role</b> </em></h3>
+		  </div>
+		  <div class="w3-col l0 m4 s8">
+			<img src="photos/" alt="Role" style="width:175px" class="w3-circle">
+			<h3>Member#2<br> <em> <b>Role</b> </em></h3>
+		  </div>
+		</div>
+		<br style="line-height:0px;">
+		<div class="row">
+			<div class="w3-col l4 m4 s12">
+			  <img src="photos/" alt="Role" style="width:175px; height:175px" class="w3-circle">
+			  <h3>Member#3<br> <em><b>Role</b> </em></h3>
+			</div>
+			<div class="w3-col l4 m4 s12">
+			  <img src="photos/" alt="Role" style="width:175px" class="w3-circle">
+			  <h3>Member#4<br> <em> <b>Role</b> </em></h3>
+			</div>
+			<div class="w3-col l4 m4 s12">
+			  <img src="photos/" alt="Role" style="width:175px" class="w3-circle">
+			  <h3>Jeovany Guillen<br><em> <b>Role</b> </em></h3>
+			</div>
+		</div>
+		<br style="line-height:0px;">
+		<div class="row">
+			<div class="w3-col l4 m4 s12">
+			  <img src="photos/" alt="role" style="width:175px; height:175px" class="w3-circle">
+			  <h3>Member#6<br> <em><b>Role</b> </em></h3>
+			</div>
+			<div class="w3-col l4 m4 s12">
+			  <img src="photos/" alt="Role" style="width:175px" class="w3-circle">
+			  <h3>Member#7<br> <em> <b>Role</b> </em></h3>
+			</div>
+		  </div>
+	  </div>
+	</div>
+  
+	<!--Small Screens (For Mobile)-->
+	<div class="w3-container-fluid w3-padding-16 w3-center w3-hide-large w3-hide-medium w3-hide-small" id="team">
+	  <div class="w3-panel w3-border">
+		<h2 style="font-size: 35px;">CREATORS</h2>
+		<br style="line-height:0px;">
+		<div>
+		  <img src="photos/" alt="Role" style="width:200px" class="w3-circle">
+		  <h3>Memb<br> <em><b> Role </b></em></h3>
+		</div>
+		<div>
+		  <img src="photos/" alt="Role" style="width:200px" class="w3-circle">
+		  <h3>Memb<br> <em> <b>Role</b> </em></h3>
+		</div>
+		<div>
+		  <img src="photos/" alt="Role" style="width:200px" class="w3-circle">
+		  <h3>Memb<br> <em> <b>Role</b> </em></h3>
+		</div>
+		<div>
+		  <img src="photos/" alt="Role" style="width:200px" class="w3-circle">
+		  <h3>Memb<br> <em><b>Role</b> </em></h3>
+		</div>
+		<div>
+		  <img src="photos/" alt="Role" style="width:200px" class="w3-circle">
+		  <h3>Memb<br> <em> <b>Role</b> </em></h3>
+		</div>
+		<div>
+		  <img src="photos/jeo1.jpg" alt="Webmaster" style="width:200px" class="w3-circle">
+		  <h3>Jeovany Guillen  <br><em> <b>Webmaster</b> </em></h3>
+		</div>
+		<div>
+			<img src="photos/" alt="Role" style="width:200px" class="w3-circle">
+			<h3>Memb<br> <em> <b>Role</b> </em></h3>
+		  </div>
+	  </div>
+	</div>
+	<!--End of Officers-->
+  </div>
+  
+  <!-- The Stats Section -->
+  <div class=" w3-container" style="align-content: center">
+	<p class="w3-large w3-center w3-padding-16"> Kasugai Bot Stats:</p>
+  
+	<p class=" w3-center"><i class="fa fa-cogs"></i> &nbsp; .</p>
+	<div class="w3-light-gray">
+	  <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:65%">60%</div>
+	</div>
+	<p class="w3-center"><i class="fa  fa-laptop"></i> &nbsp; ....</p>
+	<div class="w3-light-grey">
+	  <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:25%">30%</div>
+	</div>
+	<p class="w3-center"><i class="fa fa-wrench"></i> &nbsp; Other </p>
+	<div class="w3-light-grey">
+	  <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:10%">10%</div>
+	</div>
+	<br style="line-height:0px;">
+  </div><br><br><br>
+  
+  <div class="w3-row w3-center w3-dark-grey w3-padding-16">
+	<div class="w3-quarter w3-section">
+	  <span class="w3-xlarge">30+</span><br>Users</div>
+	<div class="w3-quarter w3-section">
+	  <span class="w3-xlarge">17</span><br>Upvotes</div>
+	<div class="w3-quarter w3-section">
+	  <span class="w3-xlarge">6</span><br>Creators</div>
+	<div class="w3-quarter w3-section"><span class="w3-xlarge">4</span><br>....</div>
+  </div><br><br><br>
+  <!--End of Stats Section-->
+  
+  
+  
+  <!--TEAMS Parallax called bgimg-4 -->
+  <div class="bgimg-4 w3-display-container w3-opacity-min">
+	<div class="w3-display-middle">
+	  <span class="w3-xxlarge w3-text-white w3-wide">O</span>
+	</div>
+  </div>
+  
+  <!--Teams container for the 2 Matabot teams-->
+  <div class="w3-container" id="commands">
+	<br><br><br>
+	<div class="w3-row-padding">
+	  <div class="w3-col l6 m6 s12">
+		<div class="w3-center">
+		  <!-- 1000 X 600 PIXELS CSUN1_2022.png -->
+		  <img src="photos/" class=" w3-image " width="600px" height="550"> 
+		</div>
+		<h4 class="w3-center">CSUN</h4>
+		<p class="setcenter2 w3-left w3-medium "><strong>CSUN</strong> .
+		</p>
+	  </div>
+	  <div class="w3-col l6 m6 s12 w3-left">
+		<div class="w3-center">
+		  <img src="photos/" class=" w3-image" width="600px" height="550"> 
+		</div>
+		<h4 class="w3-center">...</h4>
+		<p class="setcenter2 w3-left w3-medium"><strong>....</strong> ...........
+		</p>
+	  </div>
+	</div><br><br>
+  </div>
+  <!-- <div class="w3-center">
+	<p>
+	.</p>
+  </div> -->
+  
+  
+  
+  <!-- Second Parallax Image with Portfolio Text -->
+  <div class="bgimg-2 w3-display-container w3-opacity-min">
+	<div class="w3-display-middle">
+	  <span class="w3-xxlarge w3-text-white w3-wide">EVENTS</span>
+	</div>
+  </div>
+  
+  
+  
+  <!-- Container (Portfolio Section) -->
+  <div class="w3-content w3-container w3-padding-64 w3-light-grey" id="portfolio">
+	<!-- The Tour Section -->
+	<div class="w3-light-grey" id="events">
+		<!-- Large screens -->
+	  <div class="w3-container w3-content w3-padding-64 w3-light-grey" style="max-width:800px">
+		<h2 class="w3-wide w3-center">MATABOTS IN ACTION</h2>
+		<p class="w3-opacity w3-center"><i>Some of the Events we're Competing/Volunteering at</i></p><br>
+  
+		<ul class="w3-ul w3-border w3-resopnsive w3-white w3-text-grey">
+		  <li class="w3-padding"><a target="_blank" href="https://">C <span class="w3-hide-small"> Towe</span> T</a><span class="w3-hide-medium w3-hide-small"> - Jan </span><span class="w3-tag w3-round w3-red w3-right">Compe</span></li>
+  
+		  <li class="w3-padding"><a target="_blank" href="https:/">CSU <span class="w3-hide-small">....</span> ...</a><span class="w3-hide-medium w3-hide-small"> ... </span><span class="w3-tag w3-round w3-green w3-right">Vol</span></li>
+  
+		  <li class="w3-padding"><a target="_blank" href="https://www">S <span class="w3-hide-small">V</span></a><span class="w3-hide-medium w3-hide-small"> - March  </span><span class="w3-tag w3-round w3-right ">Com</span></li>
+  
+		</ul>
+	  </div>
+  
+	  <!-- Small & Medium Screens -->
+	  <div class="w3-container w3-content w3-padding-64 w3-hide-large w3-hide-medium w3-hide small" style="max-width:800px">
+		<h2 class="w3-wide w3-center">MATABOTS IN ACTION</h2>
+		<p class="w3-opacity w3-center"><i>Some of the Events we're Competing/Volunteering at</i></p><br>
+  
+		<ul class="w3-ul w3-border w3-white w3-text-grey">
+		  
+  
+		  <li class="w3-padding"><a target="_blank" href="https://www.robotevents.com/robot-competitions/college-competition/RE-VEXU-19-9865.html">VEX in the Valley Pumpkin Classic</a><span class="w3-tag w3-round w3-green w3-right ">Volunteered</span></li>
+  
+		  <li class="w3-padding"><a target="_blank" href="https://www.robotevents.com/robot-competitions/college-competition/RE-VEXU-19-9865.html">Southern California VEX U League</a><span class="w3-tag w3-round w3-red w3-right ">Competed</span></li>
+  
+		  <li class="w3-padding"><a target="_blank" href="https://www.robotevents.com/robot-competitions/college-competition/RE-VEXU-20-0304.html">Embry-Riddle VEX U Spring Tournament</a><span class="w3-tag w3-round w3-right">Competing</span></li>
+		</ul>
+	  </div>
+  
+	  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  
+	</div>
+  </div>
+  
+
+  
+  <!--SPONSORS Parallax called bgimg-5 -->
+  <div class="bgimg-5 w3-display-container w3-opacity-min">
+	<div class="w3-display-middle">
+	  <span class="w3-xxlarge w3-text-white w3-wide">SPONSORS</span>
+	</div>
+  </div>
+  
+  <!--sponsors container-->
+  <div class="w3-content w3-container" id="sponsors">
+	<br><br><br>
+	<div class="w3-row-padding">
+	  <div class="w3-col 16 m6 s12 w3-center">
+		<div class="w3-center">
+		  <a style="text-decoration:none" target="_blank" href="https://" style="font-size: 40px">
+			<img src="photos/" class=" w3-image " width="360px">
+		  </a>
+		</div>
+		<h4 class="w3-center">...</h4>
+		<p class="setcenter2 w3-left w3-medium "><strong>Sp</strong> 
+		</p>
+	  </div>
+	  
+	  <br>
+	</div>
+  </div>
+  <!-- <div class="w3-center">
+	<p>
+	  .</p>
+  </div> -->
+  
+
+  
+  
+  
+  <!-- Footer -->
+  <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+	<a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+	<div class="w3-xlarge w3-section">
+	  <a href="https://www.facebook.com/"><i class="fab fa-facebook-square w3-hover-opacity"></i></a>
+	  <a href="https://www.instagram.com/"><i class="fab fa-instagram w3-hover-opacity"></i></a>
+	  <a href="https://www.linkedin.com/"><i class="fab fa-linkedin w3-hover-opacity"></i></a>
+	  <a target="_blank" href="https://discord.gg/"><i class="fab fa-discord w3-hover-opacity"></i></a>
+	</div>
+  </footer>
+  
+  <script>
+  // Modal Image Gallery
+  function onClick(element) {
+	document.getElementById("img01").src = element.src;
+	document.getElementById("modal01").style.display = "block";
+	var captionText = document.getElementById("caption");
+	captionText.innerHTML = element.alt;
+  }
+  
+  // Change style of navbar on scroll
+  window.onscroll = function() {myFunction()};
+  function myFunction() {
+	  var navbar = document.getElementById("myNavbar");
+	  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+		  navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+	  } else {
+		  navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+	  }
+  }
+  
+  // Used to toggle the menu on small screens when clicking on the menu button
+  function toggleFunction() {
+	  var x = document.getElementById("navDemo");
+	  if (x.className.indexOf("w3-show") == -1) {
+		  x.className += " w3-show";
+	  } else {
+		  x.className = x.className.replace(" w3-show", "");
+	  }
+  }
+  </script>
+		<p></p>
+
+	</body>
+
+	<style>
+		body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+		body, html {
+			height: 100%;
+			color: #222;
+			line-height: 1.8;
+		}
+		
+		.site {
+			max-width: 100% !important;
+		}
+		.site-header {
+			max-width: 100% !important;
+		
+		}
+		#site-header img {
+			width: 100% !important;
+		
+		}
+		
+		/* Centers columns */
+		.offColumn {
+		  float: left;
+		  width: 50%;
+		}
+		
+		.column {
+		  float: left;
+		  width: 33.33%;
+		}
+		
+		/* Clear floats after the columns */
+		.row:after {
+		  content: "";
+		  display: flex;
+		align-items: center;
+		  clear: both;
+		}
+		
+		#myNavbar{
+		align-items: center; color:#000000;}.buttonround { background-color:#D8D8D8; opacity: 0.8;
+		width:inherit;
+		filter: alpha(opacity=80); font-size:20px; width:50px; height:50px; border-radius: 25px; padding:2px }
+		/* Create a Parallax Effect */
+		.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 {
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size:cover;
+		}
+		
+		/* First image (Logo. Full height) */
+		.bgimg-1 {
+			/* To change photo, add new photo to 'photos' folder, then change below*/
+		background-image: url('photos/cover-1.jpg');
+		min-width: width;
+		min-height: 100%;
+		}
+		/* Second image (Logo) */
+		.bgimg-2 {
+			/* To change photo, add new photo to 'photos' folder, then change below*/
+		background-image: url("photos/place.jpg");
+		min-height: 400px;}
+		/*clear floats*/
+		.clearing{
+		clear:both;
+		}
+		/* Third image (Contact) */
+		.bgimg-3 {
+			/* To change photo, add new photo to 'photos' folder, then change below*/
+		background-image: url("photos/place2.jpg");
+		min-height: 400px;
+		}
+		/*TEAMS image*/
+		.bgimg-4 {
+			/* To change photo, add new photo to 'photos' folder, then change below*/
+		background-image: url("photos/cover-5.jpg");
+		min-height: 400px;
+		}
+		
+		.teamtalk{
+		float:left;
+		display: inline-block;
+		width:50%
+		}
+		.setcenter{
+		display: block;
+		margin-left:8%;
+		margin-right:2%;
+		margin-top:2px;
+		}
+		
+		.setcenter2{
+		display: block;
+		margin-left:4%;
+		margin-right:2%;
+		margin-top:2px;
+		}
+		/*RESOURCES image*/
+		.bgimg-5 {
+		background-image: url("photos/change-up.jpg");
+		min-height: 400px;
+		}
+		.setleft{
+		float:left;
+		width:50%;
+		display:inline-block;
+		}
+		.rescontain{
+		display:inline-block;
+		margin-left:2%;
+		margin-right:2%;
+		margin-bottom:2%;
+		margin-top:2%;
+		}
+		.w3-wide {letter-spacing: 10px;}
+		.w3-hover-opacity {cursor: pointer;}
+		/* Turn off parallax scrolling for tablets and phones */
+		@media only screen and (max-device-width: 1024px) {
+		.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5{
+		background-attachment: scroll;
+		}
+		}
+		</style>
+
+</html>
