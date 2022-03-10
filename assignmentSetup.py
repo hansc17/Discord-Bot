@@ -1,11 +1,14 @@
-#testing
+#Michael Hipolito/Ricardo Santana
+#Comp 380
+#Group 1
+
+#Imports
 import hikari
 from hikari import *
 import lightbulb
 from lightbulb import *
 from lock import *
 import psycopg2
-import datetime
 
 #Setting connection to database
 conn = psycopg2.connect(
@@ -23,9 +26,10 @@ conn.autocommit = True
 
 bot = lightbulb.BotApp(
     token=TOKEN,
-    #default_enabled_guilds=(deg)
+    default_enabled_guilds=(deg)
 )
 
+#terminal message to check bot is online
 @bot.listen(hikari.StartedEvent)
 async def on_started(event):
     print('Bot has started')
@@ -34,9 +38,9 @@ async def on_started(event):
 async def on_ready(event):
     print('I am online!')
 
-
+#Code for adding assignment
 @bot.command
-@lightbulb.option('duedate', 'Due date of assignment. Format: MM-DD-YYYY (example: 03-01-2022)', type=datetime.datetime)
+@lightbulb.option('duedate', 'Due date of assignment. Format: MM-DD-YYYY (example: 03-01-2022)')
 @lightbulb.option('assignment', 'Assignment name')
 @lightbulb.option('section', 'Class assignment is from. Format: @"class" (example: @comp380) ', type=hikari.Role)
 @lightbulb.command('addassn', 'Set up a notification for an upcoming assignment.')
@@ -72,5 +76,5 @@ async def addassn(ctx):
             conn.commit()
             await ctx.respond(f'Noted, {assignment} is due on {duedate} for {section}')
 
-
+#run bot
 bot.run()
