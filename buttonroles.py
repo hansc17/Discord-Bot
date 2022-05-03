@@ -10,7 +10,8 @@ class MyView(miru.View):
 
     @miru.button(label="CS", emoji="🕵️", style=hikari.ButtonStyle.PRIMARY)
     async def role1_button(self, button: miru.Button, ctx: miru.Context) -> None:
-        roleid = 951187316720930868
+        #copy paste actual role id for CS role
+        roleid = 1234
         roles = ctx.member.role_ids
         if roleid in roles:
             await ctx.member.remove_role(role = roleid)
@@ -19,7 +20,8 @@ class MyView(miru.View):
 
     @miru.button(label="Bio", emoji="🐸", style=hikari.ButtonStyle.PRIMARY)
     async def role2_button(self, button: miru.Button, ctx: miru.Context) -> None:
-        roleid = 970876509583708200
+        #copy paste actual role id for Bio role
+        roleid = 5678
         roles = ctx.member.role_ids
         if roleid in roles:
             await ctx.member.remove_role(role = roleid)
@@ -28,7 +30,8 @@ class MyView(miru.View):
 
     @miru.button(label="Eng", emoji="📎", style=hikari.ButtonStyle.PRIMARY)
     async def role3_button(self, button: miru.Button, ctx: miru.Context) -> None:
-        roleid = 970876692283424849
+        #copy paste actual role id for Eng role
+        roleid = 9101
         roles = ctx.member.role_ids
         if roleid in roles:
             await ctx.member.remove_role(role = roleid)
@@ -36,7 +39,7 @@ class MyView(miru.View):
             await ctx.member.add_role(role = roleid)
 
 
-bot = hikari.GatewayBot(token="OTQ4NzY1ODU2NjM5MzczMzMz.YiAlDw.qswCjw1M1dxbZWh93rVDqdncCps")
+bot = hikari.GatewayBot(token="insert_token_here")
 miru.load(bot)
 
 
